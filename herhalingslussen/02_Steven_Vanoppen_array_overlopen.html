@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Array overlopen</title>
+    <script>
+        let array_automerken = [];
+        let hoeveel_automerken = prompt("Hoeveel automerken wil je in geven");
+        for (i = 0; i < hoeveel_automerken; i++) {
+            array_automerken.push(prompt("Geef een automerk in"));
+        }
+        
+        document.write("<p>U gaf de volgende merken in:</p>")
+        let lengte_automerken = array_automerken.length;
+        for (j = 0; j < lengte_automerken; j++) {
+            document.write(`<p>${j + 1}: ${array_automerken[j]}</p>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
