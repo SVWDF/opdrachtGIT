@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tijdschrift kopen</title>
+</head>
+<script>
+    let tijdschrift = prompt("Geef de naam van het tijdschrift");
+    let kostprijs = prompt("Geef de kostprijs");
+    let aantal = prompt("Geef in het aantal stuks");
+    document.write(`<p>Het tijdschrift is: ${tijdschrift}, het type hiervan is ${typeof tijdschrift}</p>`)
+    document.write(`<p>De kostprijs van 1 exemplaar is ${kostprijs}, het type hiervan is ${typeof tijdschrift}</p>`)
+    document.write(`<p>Het aantal exemplaren dat je wil kopen is: ${aantal}, het type hiervan is ${typeof aantal}</p>`)
+    let totaal = kostprijs * aantal;
+    document.write(`De totale prijs is dan ${totaal}`);
+</script>
+<body>
+    
+</body>
+</html>

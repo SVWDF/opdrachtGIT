@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>tijdstip</title>
+    <script>
+        //Door gebruiker input (Hogere cijfers kunnen opgegeven worden wat niet mag)
+        /* document.write("<p>Gebruiker input</p>");
+        let huidige_uur = prompt("Wat is het huidige uur op de klok van de computer");
+        if (huidige_uur > 0 && huidige_uur <= 7) {
+            document.write(`<p>Het is nu ${huidige_uur} uur.</p>`);
+            document.write("<p>Goeienacht</p>");
+        } else if (huidige_uur > 7 && huidige_uur <= 11) {
+            document.write(`<p>Het is nu ${huidige_uur} uur.</p>`);
+            document.write("<p>Goeiemorgen</p>");
+        } else if (huidige_uur > 11 && huidige_uur <= 18) {
+            document.write(`<p>Het is nu ${huidige_uur} uur.</p>`);
+            document.write("<p>Goeiemiddag</p>");
+        } else if (huidige_uur > 18) {
+            document.write(`<p>Het is nu ${huidige_uur} uur.</p>`);
+            document.write("<p>Goeie avond</p>");
+        } */
+
+        //Door JavaScript zelf
+        const vandaag = new Date();
+        let tijd = vandaag.getHours();
+        if (tijd > 0 && tijd <= 7) {
+            document.write(`<p>Het is nu ${tijd} uur.</p>`);
+            document.write("<p>Goeienacht</p>");
+        } else if (tijd > 7 && tijd <= 11) {
+            document.write(`<p>Het is nu ${tijd} uur.</p>`);
+            document.write("<p>Goeiemorgen</p>");
+        } else if (tijd > 11 && tijd <= 18) {
+            document.write(`<p>Het is nu ${tijd} uur.</p>`);
+            document.write("<p>Goeiemiddag</p>");
+        } else if (tijd > 18) {
+            document.write(`<p>Het is nu ${tijd} uur.</p>`);
+            document.write("<p>Goeie avond</p>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
